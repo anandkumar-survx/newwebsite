@@ -361,7 +361,7 @@ function HelmetModel({
   focusAngle,
   onMarkerSelect,
 }) {
-  const { scene } = useGLTF("/models/helmet.glb");
+  const { scene } = useGLTF("/helmet.glb");
   const root = useRef();
 
   const model = useMemo(() => {
@@ -436,7 +436,7 @@ function HelmetModel({
   );
 }
 
-useGLTF.preload("/models/helmet.glb");
+useGLTF.preload("/helmet.glb");
 
 // =====================================================
 // 3D STAGE
